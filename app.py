@@ -4,7 +4,7 @@ from flask import Flask, render_template, jsonify
 # Creating an instance of the Flask class.
 # __name__ is a special variable that gets the name of the current module.
 # Flask uses it to determine the root path for the application.
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 
 JOBS = [
     {
